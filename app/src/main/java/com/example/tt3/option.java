@@ -15,7 +15,7 @@ public class option extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_option);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         i1 = (ImageButton) findViewById(R.id.option3);
         i1.setOnClickListener(new View.OnClickListener() {
             @Override

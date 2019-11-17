@@ -5,10 +5,9 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -40,11 +39,13 @@ public class first1 extends AppCompatActivity {
         setContentView(R.layout.activity_first1);
         pg = findViewById(R.id.pg);
         listView = findViewById(R.id.listview);
-
         t1=findViewById(R.id.textView5);
         t2=findViewById(R.id.textView6);
-        Intent intent=getIntent();
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+        Intent intent=getIntent();
         String semester= intent.getStringExtra("sem");
         String day= intent.getStringExtra("day");
         t1.setText(semester);
@@ -54,6 +55,7 @@ public class first1 extends AppCompatActivity {
         if(x.charAt(0)=='B'){
             x="btech"+x.charAt(6);
         }
+
         if(x.equals("btech1")||x.equals("btech3")||x.equals("btech5")) {
 
             daySchedules = new ArrayList<>();
@@ -63,7 +65,7 @@ public class first1 extends AppCompatActivity {
             timeSlot.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                pg.setVisibility(View.VISIBLE);
+                    pg.setVisibility(View.VISIBLE);
                     if (task.isSuccessful()) {
                         int count = 0;
                         for (DocumentSnapshot document : task.getResult()) {
@@ -80,7 +82,7 @@ public class first1 extends AppCompatActivity {
                         Toast.makeText(first1.this, "empty view", Toast.LENGTH_SHORT).show();
 //
 //
-                pg.setVisibility(View.GONE);
+                    pg.setVisibility(View.GONE);
 //
 //
 //                String x="";
@@ -95,6 +97,23 @@ public class first1 extends AppCompatActivity {
 
         }
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_option, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+        if(id == R.id.newsfeed){
+            startActivity(new Intent(getApplicationContext(),news.class));
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 
