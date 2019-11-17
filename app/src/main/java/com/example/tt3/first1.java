@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,14 +33,13 @@ public class first1 extends AppCompatActivity {
     ArrayList<DaySchedule> daySchedules;
     TextView t1,t2,t3;
     ListView listView;
-
+    ProgressBar pg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first1);
-
+        pg = findViewById(R.id.pg);
         listView = findViewById(R.id.listview);
-
 
         t1=findViewById(R.id.textView5);
         t2=findViewById(R.id.textView6);
@@ -55,6 +55,7 @@ public class first1 extends AppCompatActivity {
             x="btech"+x.charAt(6);
         }
         if(x.equals("btech1")||x.equals("btech3")||x.equals("btech5")) {
+
             daySchedules = new ArrayList<>();
             db = FirebaseFirestore.getInstance();
             timeSlot = db.collection(x).document(day).collection("Time_slot");
@@ -62,7 +63,7 @@ public class first1 extends AppCompatActivity {
             timeSlot.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
-//                pg.setVisibility(View.VISIBLE);
+                pg.setVisibility(View.VISIBLE);
                     if (task.isSuccessful()) {
                         int count = 0;
                         for (DocumentSnapshot document : task.getResult()) {
@@ -79,7 +80,7 @@ public class first1 extends AppCompatActivity {
                         Toast.makeText(first1.this, "empty view", Toast.LENGTH_SHORT).show();
 //
 //
-//                pg.setVisibility(View.GONE);
+                pg.setVisibility(View.GONE);
 //
 //
 //                String x="";

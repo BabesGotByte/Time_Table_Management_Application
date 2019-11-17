@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TT3</string>
+    <string name="app_name">IIIT-A TimeTable</string>
 
     <string-array name="spin">
         <item>Choose your Sememter</item>
