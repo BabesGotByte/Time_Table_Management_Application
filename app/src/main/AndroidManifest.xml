@@ -5,16 +5,29 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="TIME TABLE"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".fill"></activity>
+        <activity android:name=".news"></activity>
+        <activity
+            android:name=".thiird1"
+            android:parentActivityName=".thiird" />
+        <activity
+            android:name=".second1"
+            android:parentActivityName=".second" />
+        <activity
+            android:name=".fill"
+            android:parentActivityName=".thiird1" />
         <activity android:name=".thiird" />
         <activity android:name=".option" />
         <activity android:name=".second" />
-        <activity android:name=".first" />
-        <activity android:name=".first1" />
+        <activity
+            android:name=".first"
+            android:parentActivityName=".option" />
+        <activity
+            android:name=".first1"
+            android:parentActivityName=".first" />
         <activity
             android:name=".splash"
             android:theme="@style/Theme.AppCompat.NoActionBar">

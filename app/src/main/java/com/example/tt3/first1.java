@@ -3,11 +3,8 @@ package com.example.tt3;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -24,7 +21,7 @@ public class first1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first1);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         listView = findViewById(R.id.listview);
         customlist customlist = new customlist(this,fruit,fruit2,fruit3);
         listView.setAdapter(customlist);
@@ -37,7 +34,24 @@ public class first1 extends AppCompatActivity {
         String day= intent.getStringExtra("day");
         t1.setText(semester);
         t2.setText(day);
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_option, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+        if(id == R.id.newsfeed){
+            startActivity(new Intent(getApplicationContext(),news.class));
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
 

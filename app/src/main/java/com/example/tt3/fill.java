@@ -16,6 +16,7 @@ public class fill extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fill);
         e=findViewById(R.id.editText3);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         b=findViewById(R.id.button);
 
         b.setOnClickListener(new View.OnClickListener() {
@@ -24,5 +25,14 @@ public class fill extends AppCompatActivity {
                 startActivity(new Intent(fill.this,MainActivity.class));
             }
         });
+
+//        t1=findViewById(R.id.textView5);
+//        t2=findViewById(R.id.textView6);
+//        Intent intent=getIntent();
+//
+//        String semester= intent.getStringExtra("sem");
+//        String day= intent.getStringExtra("day");
+//        t1.setText(semester);
+//        t2.setText(day);
     }
 }

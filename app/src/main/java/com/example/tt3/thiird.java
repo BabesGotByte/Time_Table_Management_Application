@@ -14,6 +14,7 @@ public class thiird extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_thiird);
         e1=findViewById(R.id.editText);
         e2=findViewById(R.id.editText2);
@@ -21,10 +22,16 @@ public class thiird extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if((e1.equals("Sonali Agarwal"))&&(e2.equals("Sonali"))) {
-                    startActivity(new Intent(thiird.this, fill.class));
+                if((e1.equals("sonali@iiita.ac.in"))&&(e2.equals("sonali"))) {
+                    startActivity(new Intent(thiird.this, thiird1.class));
                 }
-                startActivity(new Intent(thiird.this, fill.class));
+                else if((e1.equals("rkala@iiita.ac.in"))&&(e2.equals("rkala"))) {
+                    startActivity(new Intent(thiird.this, thiird1.class));
+                }
+                else if((e1.equals("vaish@iiita.ac.in"))&&(e2.equals("vaish"))) {
+                    startActivity(new Intent(thiird.this, thiird1.class));
+                }
+                startActivity(new Intent(thiird.this, thiird1.class));
             }
         });
 
