@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "371876072161",
+    "firebase_url": "https://soetimetable.firebaseio.com",
+    "project_id": "soetimetable",
+    "storage_bucket": "soetimetable.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371876072161:android:de129c0eb9d6ba9a34c5a0",
+        "android_client_info": {
+          "package_name": "com.example.tt3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371876072161-r0glu72qe0b0b4o0o8k6k8057md6b0db.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA00ihPzYL4i97ERgUzANpQ9oa2VVkgt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371876072161-r0glu72qe0b0b4o0o8k6k8057md6b0db.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
