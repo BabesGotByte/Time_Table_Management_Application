@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">TT3</string>
+
+    <string-array name="spin">
+        <item>Choose your Sememter</item>
+        <item>BTECH 1ST SEMESTER</item>
+        <item>BTECH 2ND SEMESTER</item>
+        <item>BTECH 3RD SEMESTER</item>
+        <item>BTECH 4TH SEMESTER</item>
+        <item>BTECH 5TH SEMESTER</item>
+        <item>BTECH 6TH SEMESTER</item>
+        <item>BTECH 7TH SEMESTER</item>
+        <item>BTECH 8TH SEMESTER</item>
+        <item>BTECH 9TH SEMESTER</item>
+        <item>BTECH 10TH SEMESTER</item>
+        <item>MTECH 1ST SEMESTER</item>
+        <item>MTECH 2ND SEMESTER</item>
+        <item>MTECH 3RD SEMESTER</item>
+        <item>MTECH 4TH SEMESTER</item>
+    </string-array>
+
+    <string-array name="spin1">
+        <item>Choose day</item>
+        <item>MONDAY</item>
+        <item>TUESDAY</item>
+        <item>WEDNESDAY</item>
+        <item>THRUSDAY</item>
+        <item>FRIDAY</item>
+        <item>SATURDAY</item>
+        <item>SUNDAY</item>
+    </string-array>
+
+    <string-array name="spin2">
+        <item>Choose your Faculty</item>
+        <item>Sonali Agarwal</item>
+        <item>Abhishek Vaish</item>
+        <item>Pavan Chakraborty</item>
+        <item>Rahul Kala</item>
+        <item>Vijay Kumar Chaurasiya</item>
+        <item>Ranjana Vyas</item>
+        <item>O.P. Vyas</item>
+        <item>Venketsan</item>
+        <item>Sudipta Das</item>
+    </string-array>
+
+</resources>

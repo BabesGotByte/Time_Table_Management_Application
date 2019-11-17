@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".second"
+    android:background="@color/back">
+
+<Spinner
+    android:id="@+id/spinner2"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginStart="50dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="300dp"
+    android:layout_marginEnd="50dp"
+    android:layout_marginRight="50dp"
+    android:background="@color/colorPrimary"
+    android:textAlignment="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/textView50"
+    android:layout_width="290dp"
+    android:layout_height="43dp"
+    android:layout_marginStart="50dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="200dp"
+    android:layout_marginEnd="50dp"
+    android:layout_marginRight="50dp"
+    android:text="SELECT YOUR FACULTY"
+    android:textAlignment="center"
+    android:textColor="@color/colorPrimary"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
