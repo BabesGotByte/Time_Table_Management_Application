@@ -21,13 +21,11 @@
 
     <string-array name="spin1">
         <item>Choose day</item>
-        <item>MONDAY</item>
-        <item>TUESDAY</item>
-        <item>WEDNESDAY</item>
-        <item>THRUSDAY</item>
-        <item>FRIDAY</item>
-        <item>SATURDAY</item>
-        <item>SUNDAY</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
     </string-array>
 
     <string-array name="spin2">
@@ -41,6 +39,27 @@
         <item>O.P. Vyas</item>
         <item>Venketsan</item>
         <item>Sudipta Das</item>
+    </string-array>
+
+    <string-array name="listvalues">
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
     </string-array>
 
 </resources>
