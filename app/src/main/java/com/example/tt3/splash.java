@@ -22,8 +22,6 @@ public class splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         gifImageView = (GifImageView) findViewById(R.id.gifimage);
-        progressBar = (ProgressBar) findViewById(R.id.progress);
-//        progressBar.setVisibility(progressBar.VISIBLE);
 
         try {
             InputStream inputStream = getAssets().open("move2.gif");
