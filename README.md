@@ -39,4 +39,4 @@ Set-up of an SDK can be done with the following steps-.<br/.
 5) “Run successfully” will be displayed after the application is executed successfully.<br/>
 
 ## More
-More details on the project can be found in the documentation present inside the repo. Check out the SRS and the PPT for more.
+More details on the project can be found in the documentation present inside the repo. Check out the SRS{Software Requirement Specifications) for more.
