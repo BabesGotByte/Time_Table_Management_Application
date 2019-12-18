@@ -38,5 +38,13 @@ Set-up of an SDK can be done with the following steps-.<br/.
 4) Optional- If you encounter any error related to SDK installation then, then to the file dropdown, choose “Project structure” go the SDK part and install the required packages by clicking on the checkboxes and then click on “Apply” and “OK” at the bottom of the pop up window.<br/>
 5) “Run successfully” will be displayed after the application is executed successfully.<br/>
 
+## App Interface
+
+<img src="Images/P2.jpeg" alt="drawing" width="400" height="600"/>
+<img src="Images/P3.jpeg" alt="drawing" width="400" height="600"/>
+<img src="Images/P4.jpeg" alt="drawing" width="400" height="600"/>
+<img src="Images/P5.jpeg" alt="drawing" width="400" height="600"/>
+<img src="Images/P6.jpeg" alt="drawing" width="400" height="600"/>
+
 ## More
 More details on the project can be found in the documentation present inside the repo. Check out the SRS{Software Requirement Specifications) for more.
