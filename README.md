@@ -12,7 +12,7 @@ Faculties can make a request for the change in the time table, as well as they c
 
 ## Tech Stack
 
-Android Studio, Firebase Database
+Android Studio(3.3.0.0 version), Firebase Database
 
 ![](https://img.shields.io/badge/Android-Development-blue.svg)
 ![](https://img.shields.io/badge/Firebase-Database-blue.svg)
